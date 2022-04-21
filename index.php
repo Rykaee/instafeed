@@ -21,7 +21,7 @@
                 <?php
                     $fields = "id,media_type,media_url,thumbnail_url,timestamp,permalink,caption";
                     $accToken = ""; //Set your Access Token here.
-                    $mediaLimit = 3; // Set a number of display items
+                    $mediaLimit = 3; // Set a number of display items.
 
                     function gethData($url){
                         $ch = curl_init();
