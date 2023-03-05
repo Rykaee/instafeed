@@ -34,7 +34,7 @@ Author: Roosa Kontinen 2022
                     $accToken = ""; // Set your Access Token here.
                     $mediaLimit = 3; // Set a number of display items.
 
-                    function gethData($url){
+                    function getData($url){
                         $ch = curl_init();
                         curl_setopt($ch, CURLOPT_URL, $url);
                         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -44,7 +44,7 @@ Author: Roosa Kontinen 2022
                         return $result;
                     }
 
-                    $result = gethData("https://graph.instagram.com/me/media?fields={$fields}&access_token={$accToken}&limit={$mediaLimit}");
+                    $result = getData("https://graph.instagram.com/me/media?fields={$fields}&access_token={$accToken}&limit={$mediaLimit}");
                     $result_decode = json_decode($result, true);
 
                     foreach ($result_decode["data"] as $post) : {
