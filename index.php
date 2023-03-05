@@ -1,3 +1,7 @@
+/*
+Author: Roosa Kontinen 
+*/
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +31,7 @@
                     but have not expired, and the app user has granted your app the instagram_graph_user_profile permission. 
                     Refreshed tokens are valid for 60 days from the date at which they are refreshed. */
 
-                    $accToken = "IGQVJXZA0tXRnoxb0tnbVNKVjZA3eUg1TjJvSE9mYktaRnNvaTc3akdkTExvU3dkekdIeXJmVFowV01VNlEzQm1uNDh2dFBqclZAFazFLdnRZAMS1JaTlpSDVFXzFkVUJMNjFiM3lzS3VfNnRibThwTmZAURAZDZD"; // Set your Access Token here.
+                    $accToken = ""; // Set your Access Token here.
                     $mediaLimit = 3; // Set a number of display items.
 
                     function gethData($url){
